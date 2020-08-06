@@ -1,3 +1,56 @@
-<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M14 3.69254C14 1.65319 12.2708 0 10.1382 0C8.84344 0 7.70098 0.611057 7 1.54504C6.29902 0.611057 5.15656 0 3.86223 0C1.72916 0 0 1.65281 0 3.69254C0 3.98141 0.0383562 4.26131 0.10411 4.5311C0.640313 7.71661 4.34481 11.0772 7 12C9.6548 11.0772 13.3597 7.71661 13.8951 4.53148C13.9616 4.26169 14 3.98179 14 3.69254V3.69254Z" fill="#9871F5"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="14"
+   height="12"
+   viewBox="0 0 14 12"
+   fill="none"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="purple-heart.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1017"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="19.666667"
+     inkscape:cx="7"
+     inkscape:cy="6"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <path
+     d="M14 3.69254C14 1.65319 12.2708 0 10.1382 0C8.84344 0 7.70098 0.611057 7 1.54504C6.29902 0.611057 5.15656 0 3.86223 0C1.72916 0 0 1.65281 0 3.69254C0 3.98141 0.0383562 4.26131 0.10411 4.5311C0.640313 7.71661 4.34481 11.0772 7 12C9.6548 11.0772 13.3597 7.71661 13.8951 4.53148C13.9616 4.26169 14 3.98179 14 3.69254V3.69254Z"
+     fill="#9871F5"
+     id="path2"
+     style="fill:#1db954;fill-opacity:1" />
 </svg>

@@ -9,7 +9,7 @@ justify-content: center;
 align-items: center;
 
 color: var(--color-text-in-primary);
-background: var(--color-primary);
+background: var(--color-dark-background);
 `;
 
 export const PageLandingContent = styled.div`
@@ -28,7 +28,7 @@ export const LogoContainer = styled.div`
 text-align: center;
 margin-bottom: 3.2rem;
 img {
-    height: 10rem;
+    max-width: 90%;
     }
 h2 {
     font-weight: 500;
@@ -80,6 +80,7 @@ a {
 
     img {
         width: 4rem;
+        margin-right: 0.5rem;
     }
 }
 a:first-child {

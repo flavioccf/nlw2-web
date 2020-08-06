@@ -13,13 +13,13 @@ function Landing() {
             <PageLandingContent className="container">
                 <LogoContainer>
                     <img src={logoImg} alt="Logo Proffy" />
-                    <h2>Sua plataforma de estudos online.</h2>
+                    <h2>Aprenda a tocar online.</h2>
                 </LogoContainer>
                 <HeroImage src={landingImg} alt="Plataforma de Estudos" className="hero-image"/>
                 <ButtonsContainer>
                     <Link to="/study" className="study">
                         <img src={studyIcon} alt="Estudar" />
-                        Estudar
+                        Aprender
                     </Link>
                     <Link to="/give-classes" className="give-classes">
                         <img src={giveClassesIcon} alt="Dar Aulas" />

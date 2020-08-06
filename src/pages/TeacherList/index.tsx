@@ -7,7 +7,7 @@ function TeacherList() {
     return (
         <>
         <PageTeachersList className="container">
-            <PageHeader title="Estes são os proffys disponíveis">
+            <PageHeader title="Estes são os músicos disponíveis">
                 <SearchTeacher>
                     <InputBlock>
                         <label htmlFor="subject">Matéria</label>

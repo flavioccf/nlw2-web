@@ -24,7 +24,7 @@ export const TeacherItemArt = styled.article`
             strong {
                 font: 700 2.4rem Archivo;
                 display: block;
-                color: var(--color-text-title);
+                color: var(--color-line-in-white);
             }
             span {
                 font-size: 1.6rem;
@@ -37,6 +37,7 @@ export const TeacherItemArt = styled.article`
             padding: 0 2rem;
             font-size: 1.6rem;
             line-height: 2.8rem;
+            color: var(--color-title-in-primary);
         }
         footer {
             padding: 3.2rem 2rem;
@@ -56,7 +57,7 @@ export const TeacherItemArt = styled.article`
             button {
                 width: 20rem;
                 height: 5.6rem;
-                background: var(--color-secondary);
+                background: var(--color-primary-dark);
                 color: var(--color-button-text);
                 border: 0;
                 border-radius: 0.8rem;
@@ -67,7 +68,7 @@ export const TeacherItemArt = styled.article`
                 justify-content: space-evenly;
                 transition: 0.2s;
                 &:hover {
-                    background: var(--color-secondary-dark);
+                    background: var(--color-primary-darker);
                 }
             }
         }
