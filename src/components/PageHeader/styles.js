@@ -48,6 +48,14 @@ export const HeaderContent = styled.div`
         color: var(--color-title-in-primary);
     }
 
+    p {
+        max-width: 30rem;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        color: var(--color-title-in-primary);
+        margin-top: 2.4rem;
+    }
+
     @media ${breakpoint.tablet} {
         flex: 1;
         max-width: 740px;
