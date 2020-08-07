@@ -1,4 +1,5 @@
 import React, { useState, FormEvent } from 'react';
+import { useHistory } from 'react-router-dom';
 import { PageTeacherForm, FieldSetForm, ScheduleItem } from './styles';
 import PageHeader from '../../components/PageHeader';
 import Input from '../../components/Input';
@@ -6,23 +7,21 @@ import FooterTeacherForm from '../../components/FooterTeacherForm';
 import TextArea from '../../components/TextArea';
 import Select from '../../components/Select';
 import useForm from '../../hooks/useForm';
+import api from '../../services/api';
 
 function TeacherForm() {
+    const history = useHistory();
+
     const profile = {
         name: '',
         avatar: '',
         whatsapp: '',
-        bio: ''
-    };
-
-    const profileForm = useForm(profile);
-
-    const classInfo = {
+        bio: '',
         subject: '',
         cost: ''
     };
 
-    const classInfoForm = useForm(classInfo);
+    const { values, handleChange, clearForm } = useForm(profile);
 
     const [scheduleItems, setScheduleItems] = useState([
         { week_day: "0", from: '', to: '' },
@@ -30,7 +29,22 @@ function TeacherForm() {
 
     function handleCreateClass(e: FormEvent) {
         e.preventDefault();
-        console.log(profileForm.values, classInfoForm.values, scheduleItems);
+        console.log(values, scheduleItems);
+        api.post('/classes', {
+            name: values.name,
+            avatar: values.avatar,
+            whatsapp: values.whatsapp,
+            bio: values.bio,
+            subject: values.subject,
+            cost: values.cost, 
+            schedule: scheduleItems
+        }).then(() => {
+            alert('OK');
+            history.push('/');
+        }).catch((err) => {
+            console.log(err);
+            alert('Erro');
+        })
     }
 
     function addNewScheduleItem() {
@@ -67,29 +81,29 @@ function TeacherForm() {
                 <Input
                     name="name"
                     label="Nome completo"
-                    value={ profileForm.values.name }
-                    onChange={ profileForm.handleChange }
+                    value={ values.name }
+                    onChange={ handleChange }
                 >
                 </Input>
                 <Input
                     name="avatar"
                     label="Avatar"
-                    value={ profileForm.values.avatar }
-                    onChange={ profileForm.handleChange }
+                    value={ values.avatar }
+                    onChange={ handleChange }
                 >
                 </Input>
                 <Input
                     name="whatsapp"
                     label="WhastApp"
-                    value={ profileForm.values.whatsapp }
-                    onChange={ profileForm.handleChange }
+                    value={ values.whatsapp }
+                    onChange={ handleChange }
                 >
                 </Input>
                 <TextArea
                     name="bio"
                     label="Biografia"
-                    value={ profileForm.values.bio }
-                    onChange={ profileForm.handleChange }
+                    value={ values.bio }
+                    onChange={ handleChange }
                 ></TextArea>
             </FieldSetForm>
             <FieldSetForm>
@@ -106,15 +120,15 @@ function TeacherForm() {
                         { value: 'Violino', label: 'Violino'},
                         { value: 'Gaita', label: 'Gaita'}
                     ]}
-                    value={ classInfoForm.values.subject }
-                    onChange={ classInfoForm.handleChange }
+                    value={ values.subject }
+                    onChange={ handleChange }
                 >
                 </Select>
                 <Input
                     name="cost"
                     label="Custo da sua aula por hora"
-                    value={ classInfoForm.values.cost }
-                    onChange={ classInfoForm.handleChange }
+                    value={ values.cost }
+                    onChange={ handleChange }
                 >
                 </Input>
             </FieldSetForm>
