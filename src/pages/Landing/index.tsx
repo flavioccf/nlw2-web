@@ -8,7 +8,9 @@ import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
 import { Link } from 'react-router-dom';
 import api from '../../services/api';
 
-function Landing() {
+function Landing({ location }: any) {
+    const state = location.state;
+    console.log(location);
     const [totalConnections, setTotalConnecionts] = useState(0);
 
     useEffect(() => {

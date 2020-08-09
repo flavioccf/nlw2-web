@@ -54,7 +54,7 @@ export const TeacherItemArt = styled.article`
                 display: block;
             }
 
-            button {
+            button, a {
                 width: 20rem;
                 height: 5.6rem;
                 background: var(--color-primary-dark);
@@ -67,6 +67,7 @@ export const TeacherItemArt = styled.article`
                 align-items: center;
                 justify-content: space-evenly;
                 transition: 0.2s;
+                text-decoration: none;
                 &:hover {
                     background: var(--color-primary-darker);
                 }

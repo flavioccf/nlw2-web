@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { breakpoint } from '../../assets/styles/breakpoints';
+import { ButtonStyle } from '../../components/FooterTeacherForm/styles';
 
 export const PageTeachersList = styled.div`
     width: 100vw;
@@ -23,9 +24,15 @@ export const SearchTeacher = styled.form`
     label {
         color: var(--color-text-in-primary);
     }
+    button {
+        ${ ButtonStyle }
+        @media ${breakpoint.tablet} {
+            margin-top: 3.2rem;
+        }
+    }
     @media ${breakpoint.tablet} {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         column-gap: 16px;
         position: absolute;
         bottom: -28px;

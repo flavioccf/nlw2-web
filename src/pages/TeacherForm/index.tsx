@@ -40,7 +40,7 @@ function TeacherForm() {
             schedule: scheduleItems
         }).then(() => {
             alert('OK');
-            history.push('/');
+            history.push('/', { values });
         }).catch((err) => {
             console.log(err);
             alert('Erro');
