@@ -1,14 +1,17 @@
 import React, { FormEvent, useState } from 'react';
-import { PageTeachersList, SearchTeacher } from './styles';
+import { PageTeachersList, SearchTeacher, NoTeacherAvailable } from './styles';
 import PageHeader from '../../components/PageHeader';
 import TeacherItem, { Teacher } from '../../components/TeacherItem';
 import Input from '../../components/Input';
 import Select from '../../components/Select';
 import useForm from '../../hooks/useForm';
 import api from '../../services/api';
+import Toast from '../../components/Toast';
 
 function TeacherList() {
+    const toast = Toast;
     const [teachers, setTeachers] = useState([]); 
+    const [noTeachers, setNoTeachers] = useState('Faça a sua busca e encontre um professor para você!')
 
     const classFindForm = {
         subject: '',
@@ -20,13 +23,27 @@ function TeacherList() {
 
     async function searchTeachers(e: FormEvent) {
         e.preventDefault();
-        console.log(values);
-
-        const classes = await api.get('/classes', {
-            params: values,
-        });
-
-        setTeachers(classes.data);
+        try {
+            const classes = await api.get('/classes', {
+                params: values,
+            });
+            if (classes.data.length === 0) {
+                setNoTeachers('Ops! Nenhum professor foi encontrado...');
+                Toast.fire({
+                    icon: 'info',
+                    title: 'Ops! Nenhum professor foi encontrado...'
+                  })
+            }
+            setTeachers(classes.data);   
+        } catch (error) {
+            if (error.response.status) {
+                setNoTeachers('Preencha todos os campos para fazer sua busca...');
+                Toast.fire({
+                    icon: 'warning',
+                    title: 'Preencha todos os campos para fazer sua busca...'
+                  })
+            }
+        }
     }
 
     return (
@@ -77,7 +94,7 @@ function TeacherList() {
                 </SearchTeacher>
             </PageHeader>
             <main>
-                { teachers.length === 0 && <p>Nenhum professor...</p> }
+                    { teachers.length === 0 && <NoTeacherAvailable>{ noTeachers }</NoTeacherAvailable> }
                 { teachers.map((teacher: Teacher) => {
                     return <TeacherItem key={ teacher.id } teacher={ teacher }/>;
                 }) }

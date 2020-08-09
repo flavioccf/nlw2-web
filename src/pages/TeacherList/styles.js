@@ -39,3 +39,8 @@ export const SearchTeacher = styled.form`
     }
 `;
 
+export const NoTeacherAvailable = styled.div`
+    text-align: center;
+    padding: 5rem;
+    font-size: 3rem;
+`;

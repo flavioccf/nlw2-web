@@ -7,10 +7,21 @@ import giveClassesIcon from '../../assets/images/icons/give-classes.svg';
 import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
 import { Link } from 'react-router-dom';
 import api from '../../services/api';
+import Toast from '../../components/Toast';
 
 function Landing({ location }: any) {
     const state = location.state;
-    console.log(location);
+    const toast = Toast;
+
+    if (state !== undefined) {
+        if(state.values) {
+            toast.fire({
+                icon: 'success',
+                title: 'Cadastro efetuado com sucesso'
+              })
+        }
+    }
+
     const [totalConnections, setTotalConnecionts] = useState(0);
 
     useEffect(() => {

@@ -39,11 +39,11 @@ function TeacherForm() {
             cost: values.cost, 
             schedule: scheduleItems
         }).then(() => {
-            alert('OK');
+            // alert('OK');
             history.push('/', { values });
         }).catch((err) => {
             console.log(err);
-            alert('Erro');
+            alert('Sorry... Houve um erro no seu cadastro...');
         })
     }
 
