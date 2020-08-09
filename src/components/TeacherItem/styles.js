@@ -68,6 +68,9 @@ export const TeacherItemArt = styled.article`
                 justify-content: space-evenly;
                 transition: 0.2s;
                 text-decoration: none;
+                img {
+                    max-width: 3.5rem;
+                }
                 &:hover {
                     background: var(--color-primary-darker);
                 }

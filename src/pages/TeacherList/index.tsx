@@ -29,7 +29,7 @@ function TeacherList() {
             });
             if (classes.data.length === 0) {
                 setNoTeachers('Ops! Nenhum professor foi encontrado...');
-                Toast.fire({
+                toast.fire({
                     icon: 'info',
                     title: 'Ops! Nenhum professor foi encontrado...'
                   })
@@ -38,7 +38,7 @@ function TeacherList() {
         } catch (error) {
             if (error.response.status) {
                 setNoTeachers('Preencha todos os campos para fazer sua busca...');
-                Toast.fire({
+                toast.fire({
                     icon: 'warning',
                     title: 'Preencha todos os campos para fazer sua busca...'
                   })

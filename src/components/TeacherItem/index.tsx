@@ -1,6 +1,7 @@
 import React from 'react';
 import { TeacherItemArt } from './styles';
 import WhatsAppIcon from '../../assets/images/icons/whatsapp.svg';
+import GitHubIcon from '../../assets/images/icons/github-logo.svg';
 import api from '../../services/api';
 
 export interface Teacher {
@@ -37,8 +38,8 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
             <p>Preço/Hora
     <strong>R$ { teacher.cost }</strong>
             </p>
-            <a onClick={ createNewConnection } target="_blank" rel="noopener noreferrer" href={`https://wa.me/55${ teacher.whatsapp }?text=Oi!%20te%20vi%20no%20Musify!`}>
-                <img src={WhatsAppIcon} alt="WhatsApp" />Entrar em contato
+            <a onClick={ createNewConnection } target="_blank" rel="noopener noreferrer" href={ (teacher.whatsapp.includes('github') ? teacher.whatsapp : `https://wa.me/55${ teacher.whatsapp }?text=Oi!%20te%20vi%20no%20Musify!` ) }>
+                <img src={ (teacher.whatsapp.includes('github') ? GitHubIcon : WhatsAppIcon) } alt="WhatsApp" />Entrar em contato
             </a>
         </footer>
     </TeacherItemArt>
