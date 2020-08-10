@@ -1,44 +1,47 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img src="https://repository-images.githubusercontent.com/285097096/2f2d3100-d8c1-11ea-9953-d5d86ce1c126"/>
+  <br><br>
+</p>
 
-## Available Scripts
+<h1 align="center">Musify</h1> 
+<div align="center">
+<br>
+  
+💻 **Acesse o Front-end [aqui](https://github.com/flavioccf/nlw2-web)** | 
+🖥 **Acesse o Back-end [aqui](https://github.com/flavioccf/nlw2-server)** | 
+</div>
 
-In the project directory, you can run:
+## 💡 Sobre o Projeto
 
-### `yarn start`
+Project created at the Next Level Week, promoted by [Rocket Seat](https://rocketseat.com.br), the initial project was called Proffy and the aim was to create a platform for students to find teachers for a variety of subjects.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+In my project I made Musify, with the specific goal of connecting instruments teachers and students.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+The original design provided by RocketSeat was changed to follow the Spotify color pallete.
 
-### `yarn test`
+## 🚀 Programming Languages
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ReactJS
+- TypeScript
+- HTML5 e CSS3
+- NodeJS
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📥 How to Run this project on your PC
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- Clone the web repo: `git clone https://github.com/flavioccf/nlw2-web.git`
+- Clone the server repo: `git clone https://github.com/flavioccf/nlw2-server.git`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In both projects you need to go to the folder and run:
 
-### `yarn eject`
+- Dependencies installation: `yarn install`
+- Run application: `yarn start`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The server repo has both SQLite and PostgreSQL configs, those are split in two different branches.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📕 License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Todos os arquivos incluídos aqui, incluindo este _README_, estão sob [Licença MIT](./LICENSE).<br>
+Criado com ❤ por [Flavio Carvalho](https://github.com/flavioccf)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+This readme was based on [DXWebster](https://github.com/dxwebster/NLW2-Proffy) repo of the same project
