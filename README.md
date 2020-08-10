@@ -41,7 +41,7 @@ The server repo has both SQLite and PostgreSQL configs, those are split in two d
 
 ## 📕 License
 
-Todos os arquivos incluídos aqui, incluindo este _README_, estão sob [Licença MIT](./LICENSE).<br>
-Criado com ❤ por [Flavio Carvalho](https://github.com/flavioccf)
+All of the files here inclued are under [MIT License](./LICENSE).<br>
+Made with ❤ by [Flavio Carvalho](https://github.com/flavioccf)
 
 This readme was based on [DXWebster](https://github.com/dxwebster/NLW2-Proffy) repo of the same project
