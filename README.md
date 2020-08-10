@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://repository-images.githubusercontent.com/285097096/2f2d3100-d8c1-11ea-9953-d5d86ce1c126"/>
+  <img style="max-width: 500px" src="https://repository-images.githubusercontent.com/285097096/2f2d3100-d8c1-11ea-9953-d5d86ce1c126"/>
   <br><br>
 </p>
 
@@ -7,11 +7,11 @@
 <div align="center">
 <br>
   
-💻 **Acesse o Front-end [aqui](https://github.com/flavioccf/nlw2-web)** | 
-🖥 **Acesse o Back-end [aqui](https://github.com/flavioccf/nlw2-server)** | 
+💻 **Access to Front end [here](https://github.com/flavioccf/nlw2-web)** | 
+🖥 **Access to Back end [here](https://github.com/flavioccf/nlw2-server)** | 
 </div>
 
-## 💡 Sobre o Projeto
+## 💡 About the project
 
 Project created at the Next Level Week, promoted by [Rocket Seat](https://rocketseat.com.br), the initial project was called Proffy and the aim was to create a platform for students to find teachers for a variety of subjects.
 
